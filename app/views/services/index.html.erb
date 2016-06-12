@@ -1,1 +1,13 @@
 <h1>Human Assistant Services in Sacramento County</h1>
+<% @services.each do |service| %>
+<li>
+    <span class="agency_name"><%= link_to service.agency_name,service  %></span>
+	<span class="address_1"><%= service.address_1 %></span>
+	<span class="address_2"><%= service.address_2 %></span>
+	<span class="tel"><%= service.tel %></span>
+	<span class="fax"><%= service.fax %></span>
+	<span class="email"><%= service.email %></span>
+	<span class="website"><%= link_to service.website, service.website %></span>
+</li>
+	<hr>
+<% end %>
