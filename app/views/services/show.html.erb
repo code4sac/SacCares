@@ -1,9 +1,7 @@
 <h1><%= @service.agency_name %></h1>
-<li>
-    <span class="address_1"><%= @service.address_1 %></span>
-	<span class="address_2"><%= @service.address_2 %></span>
-	<span class="tel"><%= @service.tel %></span>
-	<span class="fax"><%= @service.fax %></span>
-	<span class="email"><%= @service.email %></span>
-	<span class="website"><%= link_to service.website, @service.website %></span>
-</li>
+<%= @service.address_1 %><br>
+<%= @service.address_2 %><br>
+<%= @service.tel %><br>
+<%= @service.fax %><br>
+<%= @service.email %><br>
+<%= link_to @service.website %><br>
