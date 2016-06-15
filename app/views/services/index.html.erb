@@ -1,12 +1,19 @@
 <h1>Human Assistant Available Services in Sacramento County</h1>
-<% @services.each do |service| %>
+<% if @services.blank? %>
+<p>There are not any listings currently in the system.</p>
+<% else %>
+<p>These are the current agency listings in our system</p>
 
-    <%= link_to service.agency_name,service %><br>
-	<%= service.address_1 %><br>
-	<%= service.address_2 %><br>
-	<%= service.tel %><br>
-	<%= service.fax %><br>
-	<%= service.email %><br>
-	<%= link_to service.website, service.website %><br>
-	<hr>
+<ul id = "services">
+   <% @services.each do |c| %>
+<li>
+   <%= link_to c.agency_name, {:action => 'show', :id => c.id} -%>
+   <b> <%= link_to 'Edit', {:action => 'edit', :id => c.id} %></b>
+   <b> <%= link_to "Delete", {:action => 'destroy', :id => c.id},
+      data: {confirm: "Are you sure you want to delete this listing?"} %></b>
+</li>
+   <% end %>
+</ul>
+
 <% end %>
+<p><%= link_to "Add new agency listing", {:action => 'new' }%></p>

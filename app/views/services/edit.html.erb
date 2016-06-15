@@ -1,1 +1,16 @@
-<h1>Edit Agency</h1>
+<h1>Edit Agency Listing</h1>
+
+<%= form_for @service, :url =>{:action => "update", :id =>@service} do |f| %>
+
+<p>Agency Name: <%= f.text_field 'agency_name' %></p>
+<p>Street Address: <%= f.text_field  'address_1' %></p>
+<p>City, State, Zip: <%= f.text_field  'address_2' %></p>
+<p>Tel: <%= f.text_field  'tel' %></p>
+<p>Fax: <%= f.text_field  'fax' %></p>
+<p>Email: <%= f.text_field  'email' %></p>
+<p>Website: <%= f.text_field  'website' %></p>
+<p>Category: <%= f.collection_select :category_id, Category.all, :id, :name %></p>
+<%= f.submit "Save changes" %>
+<% end %>
+<br>
+<%= link_to 'Back', {:action => 'index' } %>

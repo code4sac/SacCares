@@ -4,4 +4,7 @@
 <%= @service.tel %><br>
 <%= @service.fax %><br>
 <%= @service.email %><br>
-<%= link_to @service.website %><br>
+<%= link_to "Website", @service.website %><br><br>
+
+
+<%= link_to 'Back', {:action => 'index'} %>

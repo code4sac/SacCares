@@ -1,1 +1,38 @@
-<h1>New Agency</h1>
+<h1>Add New Agency Listing</h1>
+<%= form_tag :action => 'create' do %>
+<p>
+<label for = "service_agency_name">Agency Name</label>:
+<%= text_field 'services', 'agency_name' %>
+</p>
+<p>
+<label for = "service_address_1">Street Address</label>:
+<%= text_field 'services', 'address_1' %>
+</p>
+<p>
+<label for = "service_address_2">City, State, Zip</label>:
+<%= text_field 'services', 'address_2' %>
+</p>
+<p>
+<label for = "service_tel">Tel</label>:
+<%= text_field 'services', 'tel' %>
+</p>
+<p>
+<label for = "service_fax">Fax</label>:
+<%= text_field 'services', 'fax' %>
+</p>
+<p>
+<label for = "service_email">Email</label>:
+<%= text_field 'services', 'email' %>
+</p>
+<p>
+<label for = "service_website">Website</label>:
+<%= text_field 'services', 'website' %>
+</p>
+<p>
+<label for = "service_category_id">Category</label>:
+<%= collection_select(:services, :category_id, @categories, :id, :name, prompt: true) %></p>	
+<%= submit_tag "Create" %>
+
+<% end -%>
+<br>
+<%= link_to 'Back', {:action => 'index'} %>
