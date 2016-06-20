@@ -1,1 +1,7 @@
-<h1>agency name</h1>
+<h1><%= @category.name %></h1>
+<% @services.each do |service| %>
+	<h3><%= link_to service.agency_name,service %></h3>
+	<h3><%= service.tel %></h3>
+<% end %>
+
+<%= link_to 'Back to list of Services', {:action => 'index'} %>

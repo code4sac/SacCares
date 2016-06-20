@@ -1,1 +1,9 @@
 <h1>Human Assistant Services in Sacramento County</h1>
+
+<ul>
+<% @categories.each do |category| %>
+
+<li><%= link_to category.name,category %></li>
+
+<% end %>
+</ul>

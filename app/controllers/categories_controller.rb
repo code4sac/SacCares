@@ -22,6 +22,8 @@ class CategoriesController < ApplicationController
 	
 	def show
 		@category = Category.find(params[:id])
+		@agency_name = @category.name
+		@services = @category.services
 
 	end
 	

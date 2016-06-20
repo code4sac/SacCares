@@ -5,6 +5,6 @@
 <%= @service.fax %><br>
 <%= @service.email %><br>
 <%= link_to "Website", @service.website %><br><br>
-
+<p>Service: <%= link_to @service.category.name,category_path(:id => @service.category) %></p>
 
 <%= link_to 'Back', {:action => 'index'} %>
