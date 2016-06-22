@@ -1,2 +1,8 @@
-<h1>Welcome!</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<h1>Sacramento County Health and Human Assistance Programs</h1>
+<p>We are always here to help</p>
+
+<% @services.each do |service| %>
+	<h3><%= link_to service.agency_name,service %></h3>
+	<p><%= service.tel %></p>
+	<br>	
+<% end %>

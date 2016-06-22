@@ -7,7 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<div>
+<ul class="main-nav">
+	<li><%= link_to "Home", root_path %></li>
+	<li><%= link_to "About", pages_about_path %></li>
+	<li><%= link_to "Services", services_path %></li>
+	<li><%= link_to "Contact", pages_contact_path %></li>
+	<li><%= link_to "Resources", pages_resources_path %></li>
+</ul>
+</div>
 <%= yield %>
 
 </body>

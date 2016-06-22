@@ -1,9 +1,17 @@
 Rails.application.routes.draw do
    
      
+  get 'pages/about'
+
+  get 'pages/contact'
+
+  get 'pages/resources'
+  
+  
     get 'home/index'
 	resources :services
 	resources :categories
+		
 	#resources :users
 	#resource  :admin
 	
