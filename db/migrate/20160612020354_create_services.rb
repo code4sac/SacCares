@@ -14,4 +14,15 @@ class CreateServices < ActiveRecord::Migration
       t.timestamps null: false
     end
   end
+  
+class AddIndexToPageLatAndLng < ActiveRecord::Migration
+
+   def self.up
+     add_index  :pages, [:lat, :lng]
+   end
+
+   def self.down
+     remove_index  :pages, [:lat, :lng]
+   end
+ end
 end
