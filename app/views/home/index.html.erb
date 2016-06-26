@@ -1,8 +1,10 @@
-<h1>Sacramento County Health and Human Assistance Programs</h1>
-<p>We are always here to help</p>
-
 <% @services.each do |service| %>
-	<h3><%= link_to service.agency_name,service %></h3>
-	<p><%= service.tel %></p>
-	<br>	
+	<div class="post">
+	<h1 class="agency_name"><%= link_to service.agency_name,service %></h1>
+	<div class="entry"><%= service.tel %></div>
+	   <div class="byline">
+        <p class="meta">May 07, 2012</p>
+        <p class="links"><a href="service.html">Read More</a> Services</p>
+       </div>
+	</div>	
 <% end %>
