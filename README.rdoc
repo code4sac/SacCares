@@ -1,4 +1,4 @@
-# Project Description
+H1 Project Description
 The goal of SacCares is to develope an app that will serve as a single-source listing that will make all available assistance for domestic violence, addiction and mental health issues easily accessible to Sacramento County residents in crisis situations.
 
 # Contributor(s)
@@ -8,7 +8,7 @@ The goal of SacCares is to develope an app that will serve as a single-source li
 * Guy Sperry, DTech (Sacramento County Department of Technology)
 
 # Developer Documentation
-** Requirements
+H3 Requirements
 * Git
 * Ruby 2.2 (RVM recommended for managing Ruby versions)
 * Rails 4.2
