@@ -1,13 +1,17 @@
+*Database*
 *Project Description*
 
 The goal of SacCares is to develope an app that will serve as a single-source listing that will make all available assistance for domestic violence, addiction and mental health issues easily accessible to Sacramento County residents in crisis situations.
 
+*Database*
 *Contributor(s)*
 * Koni Davies (@koni-davies),estherkdavies@gmail.com
 
+*Database*
 *Stakeholder Engagement*
 * Guy Sperry, DTech (Sacramento County Department of Technology)
 
+*Database*
 *Developer Documentation*
 Requirements:
 * Git
