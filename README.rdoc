@@ -1,14 +1,14 @@
-**Project Description**
+*Project Description*
 
 The goal of SacCares is to develope an app that will serve as a single-source listing that will make all available assistance for domestic violence, addiction and mental health issues easily accessible to Sacramento County residents in crisis situations.
 
-**Contributor(s)**
+*Contributor(s)*
 * Koni Davies (@koni-davies),estherkdavies@gmail.com
 
-**Stakeholder Engagement**
+*Stakeholder Engagement*
 * Guy Sperry, DTech (Sacramento County Department of Technology)
 
-**Developer Documentation**
+*Developer Documentation*
 Requirements:
 * Git
 * Ruby 2.2 (RVM recommended for managing Ruby versions)
@@ -24,7 +24,7 @@ Requirements:
 5. Run $ rails server
 6. Point your browser to localhost:3000 to preview the app
 
-**Database**
+*Database*
 1. Install PostgreSQL
 2. Create the database $ bundle exec rake db:create
 3. Load the schema $ bundle exec rake db:schema:load
